@@ -1,0 +1,46 @@
+#viewPage{
+    background-color: #f7d981;
+}
+
+.textInto{
+    color: #8c5c0c;
+}
+.textNormal{
+    color: #958563;
+}
+/* CSS para la animación de entrada (flip) */
+.flip {
+    animation-name: flipIn;
+    animation-duration: 3s;
+    /* Otras propiedades de animación como timing, delay, etc. */
+  }
+  
+  @keyframes flipIn {
+    from {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* CSS para la animación de salida (fadeoutleft) */
+  .fadeoutleft {
+    animation-name: fadeOutLeft;
+    animation-duration: 3s;
+    /* Otras propiedades de animación como timing, delay, etc. */
+  }
+  
+  @keyframes fadeOutLeft {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  }
+  

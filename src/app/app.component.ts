@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {
+
+} from 'primeng/'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'residenciaAPP_frontend';
+  sidebarVisible: boolean = false; // Puedes establecerla en true para que la barra lateral sea visible por defecto
+
+
 }
