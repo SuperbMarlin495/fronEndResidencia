@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {
 
-} from 'primeng/'
 
 @Component({
   selector: 'app-root',

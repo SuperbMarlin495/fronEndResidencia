@@ -1,0 +1,54 @@
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+
+
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    img{
+        width: 45vh;
+    }
+    #divLoginComplete{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: grey;
+        width: 440px;
+        position: relative;
+        left: 388px;
+        top: 81px;
+        border-radius: 20px;
+        height: 58vh;
+        box-shadow: 10px 5px 5px black;
+    }
+    .formLogin{
+        display: flex;
+        flex-direction: column;
+    }
+    .inputTextLogin{
+        position: relative;
+        left: 72px;
+        height: 6vh;
+        margin-top: 11px;
+    }
+    .btnLogin{
+        margin-top: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
