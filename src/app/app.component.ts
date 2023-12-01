@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'residenciaAPP_frontend';
-  sidebarVisible: boolean = false; // Puedes establecerla en true para que la barra lateral sea visible por defecto
+    
+  navBarView: boolean = true;
 
-
+  hiddenNavBar(){
+    this.navBarView = false;
+  }
 }

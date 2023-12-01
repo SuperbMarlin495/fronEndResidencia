@@ -19,14 +19,15 @@ import { CarouselModule } from 'primeng/carousel';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { AnimateModule } from 'primeng/animate';
 import { SpeedDialModule } from 'primeng/speeddial';
-
-import { LoginModule } from './login/login.module';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DragDropModule } from 'primeng/dragdrop';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeViewComponent,
-    LoginComponent
+    LoginComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,9 +43,10 @@ import { LoginModule } from './login/login.module';
     CarouselModule,
     ScrollTopModule,
     AnimateModule,
-    SpeedDialModule
+    SpeedDialModule,
+    DragDropModule
   ],
   providers: [],
-  bootstrap: [AppComponent, LoginModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

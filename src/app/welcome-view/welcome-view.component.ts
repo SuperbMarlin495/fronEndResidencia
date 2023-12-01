@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { InputNumberModule } from 'primeng/inputnumber';
-
 @Component({
   selector: 'app-welcome-view',
   templateUrl: './welcome-view.component.html',
@@ -28,4 +27,5 @@ export class WelcomeViewComponent {
       tres: 3.53
     },
   ]
+
 }

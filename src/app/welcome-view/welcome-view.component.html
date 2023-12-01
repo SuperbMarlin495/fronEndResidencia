@@ -1,3 +1,4 @@
+<app-nav-bar></app-nav-bar>
 <div class="grid grid-nogutter surface-section text-800">
     <div class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center " id="viewPage">
         <section>
@@ -8,26 +9,13 @@
                 {{mensaje}}
             </p>
 
-            <button pButton pRipple label="Learn More" type="button" class="mr-3 p-button-raised"></button>
-            <button pButton pRipple label="Live Demo" type="button" class="p-button-outlined"></button>
         </section>
     </div>
     <div class="col-12 md:col-6 overflow-hidden">
         <img src="https://globalsupply.com.mx/wp-content/uploads/2019/12/giphy.gif" alt="Image" class="md:ml-auto block md:h-full" style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)">
     </div>
 
-    <div class="objetos" *ngFor="let modelo of items">
+    <!-- <div class="objetos" *ngFor="let modelo of items">
         <p>{{modelo.dos}}</p>
-    </div>
-</div>
-
-<div pAnimate enterClass="flip" leaveClass="fadeoutleft" style="text-align: center;">
-    <video width="320" height="240" controls>
-        <source src="../../assets/images/production_id_4293956 (2160p).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-
-      <input name="inputInfo" ng>
-
-      <p></p>
+    </div> -->
 </div>

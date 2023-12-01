@@ -1,5 +1,14 @@
+element {
+  --yellow-grand: #ecb40e;
+  --yellow-veige: #f7d981;
+  --brown-main: #8c5c0c;
+  --greey-main: #868481;
+  --greey-wait: #b4b4b4;
+}
+
+
 #viewPage{
-    background-color: #f7d981;
+    background-color: white;
 }
 
 .textInto{
