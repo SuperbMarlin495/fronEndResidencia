@@ -21,6 +21,7 @@ import { AnimateModule } from 'primeng/animate';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DragDropModule } from 'primeng/dragdrop';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { DragDropModule } from 'primeng/dragdrop';
     ScrollTopModule,
     AnimateModule,
     SpeedDialModule,
-    DragDropModule
+    DragDropModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
