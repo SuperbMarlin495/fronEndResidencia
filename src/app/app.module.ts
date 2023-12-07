@@ -23,13 +23,19 @@ import { SpeedDialModule } from 'primeng/speeddial';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DragDropModule } from 'primeng/dragdrop';
 import { LoginModule } from './login/login.module';
+import { MaterialComponent } from './material/material.component';
+
+import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './material/product-list/product-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeViewComponent,
     LoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    MaterialComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +54,8 @@ import { LoginModule } from './login/login.module';
     SpeedDialModule,
     DragDropModule,
     LoginModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

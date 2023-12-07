@@ -24,7 +24,7 @@
         left: 388px;
         top: 81px;
         border-radius: 20px;
-        height: 82vh;
+        height: 85vh;
         box-shadow: 10px 5px 5px black;
         
     }
@@ -38,7 +38,7 @@
         left: 388px;
         top: 81px;
         border-radius: 20px;
-        height: 62vh;
+        height: 68vh;
         box-shadow: 10px 5px 5px black
     }
     body{
@@ -57,6 +57,10 @@
     .btnLogin{
         margin-top: 15px;
     }
+    .btnLog{
+        margin: 11px;
+        padding: 6px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -69,12 +73,12 @@
     body {
         background-image: url('../../assets/images/carton-embalaje.jpg');
         background-size: 102vw 100vh;
-        width: 230vh;
+        width: 212vh;
         height: 101vh;
-        margin: -41px;
+        margin: -85px;
     }
     #divLoginComplete{
-        left: 780px;
+        left: 705px;
         top: 95px;
     }
     #divNewAccount{
@@ -87,17 +91,23 @@
     body {
         background-image: url('../../assets/images/carton-embalaje.jpg');
         background-size: 100vw 100vh;
-        width: 222vh;
+        width: 221vh;
         height: 101vh;
-        margin: -17px;
+        margin: -85px;
+        margin-left: -1px;
     }
     #divLoginComplete{
-        left: 820px;
+        left: 705px;
         top: 95px;
     }
     #divNewAccount{
         left: 844px;
         top: 61px;
+    }
+    .intLog{
+        position: relative;
+        left: 55px;
+        margin: 18px;
     }
 }
 

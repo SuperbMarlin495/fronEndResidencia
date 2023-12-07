@@ -41,7 +41,7 @@ element {
       height: 60px;
       display: flex;
       align-items: center;
-      background-color: #8c5c0c;
+      background-color: #000;
       color: white;
       font-weight: 600;
     }
@@ -340,3 +340,6 @@ element {
     }
   }
   
+  .navList{
+    padding: 25px;
+  }

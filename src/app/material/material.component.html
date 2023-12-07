@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="edit ? editProduct() : submitProduct()">
+                <div class="form-group">
+                    <input type="text" name="name" [(ngModel)]="product.name_product" class="form-control" placeholder="Product Name" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="description" [(ngModel)]="product.description" class="form-control" placeholder="Product description">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="unit_measurement" [(ngModel)]="product.unit_measurement" class="form-control" placeholder="Unit Measurement">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="precioPza" [(ngModel)]="product.precioPza" class="form-control" placeholder="Price">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="imgProduct" [(ngModel)]="product.imgProduct" class="form-control" placeholder="Link of imaage">
+                </div>
+                <button class="btn btn-primary btn-block">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
