@@ -9,6 +9,7 @@ import { product } from '../interfaces/product'
   providedIn: 'root'
 })
 export class ProductService {
+  
   BASE_URL: string = 'http://localhost:3200';
   constructor(private http: HttpClient) { }
 

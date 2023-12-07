@@ -4,7 +4,6 @@ import { ProductService } from '../service/product.service';
 import { product } from '../../app/interfaces/product';
 
 import { Router, ActivatedRoute } from '@angular/router'
-import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-material',
@@ -17,18 +16,25 @@ export class MaterialComponent implements OnInit {
     private router: Router,
     private activateRouter: ActivatedRoute
     ){}
-    edit: boolean = false;
+
+  public edit: boolean = false;
+  public submit: boolean = true;
+
   ngOnInit(){
-   const parametro = this.activateRouter.snapshot.params;
-   console.log(parametro)
-   if(parametro){
+   let parametro = this.activateRouter.snapshot.params;
+   console.log(parametro);
+   if(parametro['id'] != null){
       this.productService.getProduct(parametro['id']).subscribe(
         res => {
           console.log(res);
           this.product = res;
           this.edit = true;
+          this.submit = false;
         }
       )
+   }else{
+    this.edit = false;
+    this.submit = true;
    }
   }
 
