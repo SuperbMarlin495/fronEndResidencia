@@ -63,9 +63,10 @@ export class MaterialComponent implements OnInit {
   }
 
   editProduct(){
+    console.log(this.product);
     this.productService.updateProdcut(this.product.id_product, this.product).subscribe(
       res => {
-        alert('Axtulizacion Correcta');
+        alert('Actulizacion Correcta');
         this.router.navigate(['/productList'])
       },
       err =>{

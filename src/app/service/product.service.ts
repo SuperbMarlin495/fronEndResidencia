@@ -25,6 +25,6 @@ export class ProductService {
     return this.http.delete(`${this.BASE_URL}/materials/${id}`)
   }
   updateProdcut(id: number, product: product): Observable<product>{
-    return this.http.put<product>(`${this.BASE_URL}/materials/${id}`, product)
+    return this.http.patch<product>(`${this.BASE_URL}/materials/${id}`, product)
   }
 }
